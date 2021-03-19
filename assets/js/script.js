@@ -41,12 +41,12 @@ var codeQuestions = [
     question: "Where is the correct place to link a stylesheet?",
     possibleAnswers: ["At the top of the <body> tag", "At the bottom of the <body> tag", "Between the <head> tags", "Between the <title> tags"],
     correctAnswer: "Between the <head> tags" 
-    }
+    },
     {
     question: "What is the proper way to style all <button> and all <a> elements?",
     possibleAnswers: ["a button {\r\n  border: 2px\r\n}", "a:button {\r\n  border: 2px\r\n}", "button, a {\r\n  border: 2px\r\n}", "button a {\r\n  border: 2px\r\n}"],
     correctAnswer: "button, a {\r\n  border: 2px\r\n}" 
-    }
+    },
     {
     question: "Which of the following is a JavaScript object?",
     possibleAnswers: ["var newBook = {title: 'Lion King'};", "var newBook = 'Charlie and the chocolate factory';", "var newBook = ['title', 'the day i dreamt about sports'];", "var newBook = [title: 'chickenhead'];"],
