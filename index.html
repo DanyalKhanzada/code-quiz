@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Quiz</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="./high-scores.html" class="high-scores">high scores</a>
+    <span id="timer"></span>
+  </header>
+
+  <div id="quiz">
+    <h2 class="question" id="quizQuestion">Code Quiz Challenge</h2>
+    <p id="intro">Try answering the following code-related questions within the time limit. For every wrong answer, you will have 10 seconds deducted from your time/score!
+      <br \>
+      <br \>
+    <button id="startBtn">start quiz</button>
+    </p>
+    <div id="choices"></div>
+  </div>
+
+  <div id="scoreEntry">
+    <h2>All done!</h2>
+    <p id="finalScore"></p>
+    <label>Enter your initials:</label>
+    <input type="text" id="userInitials" placeholder="initials" value="" />
+    <button id="scoreBtn">Submit</button>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
