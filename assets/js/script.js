@@ -1,5 +1,9 @@
 
-
+var secondsLeft = 150;
+var wrongAnswer = 10;
+var currentScore = 0;
+var timerCountDown;
+var initials;
 
 var codeQuestions = [
     {
@@ -28,29 +32,29 @@ var codeQuestions = [
       correctAnswer: "At the beginning of the .js file" 
     },
     {
-    question: "What is the proper way to set alternate text for an image element?",
-    possibleAnswers: ["<img src='picture.jpg' alt='This is my alternate text' />", "<img src='picture.jpg' text='This is my alternate text' />", "<img src='picture.jpg' img='This is my alternate text' />", "<img src='picture.jpg' caption='This is my alternate text' />"],
-    correctAnswer: "<img src='picture.jpg' alt='This is my alternate text' />" 
+      question: "What is the proper way to set alternate text for an image element?",
+      possibleAnswers: ["<img src='picture.jpg' alt='This is my alternate text' />", "<img src='picture.jpg' text='This is my alternate text' />", "<img src='picture.jpg' img='This is my alternate text' />", "<img src='picture.jpg' caption='This is my alternate text' />"],
+      correctAnswer: "<img src='picture.jpg' alt='This is my alternate text' />" 
     },
     {
-    question: "Data stored in sessionStorage will persist after the window is closed. (True or False)",
-    possibleAnswers: ["True", "False", "", ""],
-    correctAnswer: "False" 
+      question: "Data stored in sessionStorage will persist after the window is closed. (True or False)",
+      possibleAnswers: ["True", "False", "", ""],
+      correctAnswer: "False" 
     },
     {
-    question: "Where is the correct place to link a stylesheet?",
-    possibleAnswers: ["At the top of the <body> tag", "At the bottom of the <body> tag", "Between the <head> tags", "Between the <title> tags"],
-    correctAnswer: "Between the <head> tags" 
+      question: "Where is the correct place to link a stylesheet?",
+      possibleAnswers: ["At the top of the <body> tag", "At the bottom of the <body> tag", "Between the <head> tags", "Between the <title> tags"],
+      correctAnswer: "Between the <head> tags" 
     },
     {
-    question: "What is the proper way to style all <button> and all <a> elements?",
-    possibleAnswers: ["a button {\r\n  border: 2px\r\n}", "a:button {\r\n  border: 2px\r\n}", "button, a {\r\n  border: 2px\r\n}", "button a {\r\n  border: 2px\r\n}"],
-    correctAnswer: "button, a {\r\n  border: 2px\r\n}" 
+      question: "What is the proper way to style all <button> and all <a> elements?",
+      possibleAnswers: ["a button {\r\n  border: 2px\r\n}", "a:button {\r\n  border: 2px\r\n}", "button, a {\r\n  border: 2px\r\n}", "button a {\r\n  border: 2px\r\n}"],
+      correctAnswer: "button, a {\r\n  border: 2px\r\n}" 
     },
     {
-    question: "Which of the following is a JavaScript object?",
-    possibleAnswers: ["var newBook = {title: 'Lion King'};", "var newBook = 'Charlie and the chocolate factory';", "var newBook = ['title', 'the day i dreamt about sports'];", "var newBook = [title: 'chickenhead'];"],
-    correctAnswer: "var newBook = {title: 'Lion King'}" 
+      question: "Which of the following is a JavaScript object?",
+      possibleAnswers: ["var newBook = {title: 'Lion King'};", "var newBook = 'Charlie and the chocolate factory';", "var newBook = ['title', 'the day i dreamt about sports'];", "var newBook = [title: 'chickenhead'];"],
+      correctAnswer: "var newBook = {title: 'Lion King'}" 
     }
 
   ];
